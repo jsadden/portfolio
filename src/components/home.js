@@ -3,13 +3,13 @@ import {Link} from 'react-scroll';
 
 class Home extends Component {
     state ={
-        
         overlayStyle: {
             transform: `scale(1.1)`
         }
     }
 
-    rotateImage(e) {
+    //Scales image depending on cursor y position
+    scaleImage(e) {
 
         let y = e.clientY;
 
@@ -23,13 +23,11 @@ class Home extends Component {
     render(){
         return(
             <div className ='home'
-                onMouseMove={(e) => (this.rotateImage(e))}
+                onMouseMove={(e) => (this.scaleImage(e))}
             >
                 <div className='home_overlay'
                 style={this.state.overlayStyle}
-                >
-                    
-                </div>
+                > </div>
                 <div>
                         <div className='home_name'>
                             <span className='home_name_span'>J</span>

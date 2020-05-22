@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Yup from 'yup';
 
-
+//Validation schema for contact form
 export const ContactSchema = Yup.object().shape({
     email: Yup.string().email('Please enter a valid email address.').required('This field is required'),
     firstname: Yup.string().required('This field is required'),
@@ -9,6 +9,7 @@ export const ContactSchema = Yup.object().shape({
     message: Yup.string().required('This field is required'),
 })
 
+//Helper template for form elements 
 export const FormElem = (props) => {
     let template = null;
 
@@ -16,9 +17,9 @@ export const FormElem = (props) => {
         case 'input': 
             template = <div className='row'>
                 <div className='twelve columns'>
-                    
+
+                    {/* Display error only if there is one and the element has been touched */}
                     {props.errors && props.touched ?
-                        
                         <div className='error-label'>
                             {props.errors}
                         </div> 
@@ -35,16 +36,19 @@ export const FormElem = (props) => {
                     
                 </div>
             </div>
-
             break;
+
         case 'textarea': 
             template = <div className='row'>
                 <div className='twelve columns'>
+                    
+                    {/* Display error only if there is one and the element has been touched */}
                     {props.errors && props.touched ?
                         <div className='error-label'>
                             {props.errors}
                         </div>
                     :null}
+
                     <textarea 
                         type={props.elData.type}
                         name={props.name}
@@ -56,8 +60,8 @@ export const FormElem = (props) => {
                     
                 </div>
             </div>
-
             break;
+
         default:
             template = null;
     }

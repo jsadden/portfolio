@@ -37,7 +37,7 @@ class Tech extends Component {
         {key: "'Aerospace design'",         value: '// B.Eng'},
     ]
 
-
+    //template for returning a row containing a skill and its comment
     createTech(num) {
         return (
             <div style={{paddingLeft:'45px'}}>  
@@ -49,6 +49,7 @@ class Tech extends Component {
         )
     }
 
+    //each row of the skills section is contained here
     rows = [
         <div>   
             <span className='tech_keyword'>class </span> 
@@ -200,6 +201,7 @@ class Tech extends Component {
         </div>
     ]
 
+    //creates the skills section my mapping the rows array and counting the lines
     createRows() {
         return this.rows.map((row,i) => (
             <div key={i} className='techrow row'>

@@ -12,7 +12,7 @@ class Contact extends Component {
         
     }
 
-
+    //EmailJS send
     sendEmail(values, cb) {
         emailjs.send('default_service', 'template_PB5cBo3d', {
             from_name: values.firstname + " " + values.lastname,
@@ -20,14 +20,15 @@ class Contact extends Component {
             message_html: values.message
         }, 'user_dLK36apdXXTb5ig9vXFLI')
         .then(response => {
+            //set success for 3 seconds, cb resets the form, then it times out and success message diappears
             this.setState({success: true})
             cb()
             setTimeout(() => {
                 this.setState({success: null})
-                
             }, 3000);
 
         }, (err) => {
+            //set failure
             console.log(err)
             this.setState({success: false})
         })
@@ -37,9 +38,9 @@ class Contact extends Component {
         return (
             <div className='contact'>
                 <div className='form_container'>
-
                 
                 <h3>Shoot me a message</h3>
+                {/*  A form to fill out to contact me built on Formik and Yup   */}
                 <Formik
                     initialValues={{
                         email: '',
@@ -47,9 +48,9 @@ class Contact extends Component {
                         lastname: '',
                         message: ''
                     }}
+
                     validationSchema={ContactSchema}
                     onSubmit={(values, {resetForm}) => {
-                        
                         this.sendEmail(values, resetForm)    
                     }}
 
@@ -64,7 +65,6 @@ class Contact extends Component {
                     }) => (
                         <form onSubmit={handleSubmit}>
                             <label>Email:</label>
-
                             <FormElem 
                                 elData={{element: 'input', type:'text', value:values.email}}
                                 placeholder = 'Email address'
@@ -110,7 +110,8 @@ class Contact extends Component {
                             <button type='submit'>
                                 SEND
                             </button>
-
+                            
+                            {/*  Email sent successfully or failed messages   */ }
                             {this.state.success !== null?
                                 this.state.success === true?
                                     <div>

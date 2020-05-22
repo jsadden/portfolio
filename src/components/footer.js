@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-scroll';
 
+// Footer contains logo and links to other pages
 const Footer = () => {
     return(
         <footer>

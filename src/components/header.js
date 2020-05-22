@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-scroll';
 
 
-
+//Sticky header contains scrolling links and the logo
 const Header = () => {
     return (
         <header>

@@ -63,6 +63,8 @@ class Projects extends Component {
         openArticles: []
     }
 
+
+    //adds or removes articles from view using openarticles array
     showArticle = (e, name) => {
         
         if (this.state.openArticles.includes(name)) {
@@ -70,17 +72,16 @@ class Projects extends Component {
             let i = this.state.openArticles.indexOf(name)
 
             arr.splice(i,1);
-
             this.setState({openArticles: arr})
+
         } else {
-            
             this.setState({
                 openArticles: [...this.state.openArticles, name]
             })
-            
         }
     }
 
+    //Gets expanded article content when article links/image are clicked
     getArticle = (e, item) => {
         return (
             
@@ -102,6 +103,7 @@ class Projects extends Component {
         )
     }
 
+    //gets expanded article bullet points and returns them in two columns
     getArticleRow (points) {
         let row = null;
         let rows = [];
@@ -122,12 +124,11 @@ class Projects extends Component {
                 </div>
             </div>
             rows.push(row);
-            
         }
-
         return rows
     }
 
+    //template for showing condensed article content and image
     showProjects(arr) {
         return (
             arr.map((item, i)=> (
@@ -155,11 +156,8 @@ class Projects extends Component {
                             classNames='article-transition'
                             mountOnEnter
                             unmountOnExit
-
                         >
- 
                                     {(e) => this.getArticle(e, item)}
-
                     </CSSTransition>
                     
                 </div>
@@ -182,16 +180,12 @@ class Projects extends Component {
                                 </button >
                             </a>
                         </div>
-                        
                     </div>
-                    
                 </div>
-                
                 {this.showProjects(this.state.projects)}
             </div>
         )
     }
-    
 }
 
 export default Projects;
