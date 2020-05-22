@@ -1,0 +1,550 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    color:#ffffff;  
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/*-----------HEADER-----------*/
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+header {
+    padding-top: 5px;
+    width: 100%;
+    background: rgba(0,0,0,0);
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    text-align: center;
+    font-size:  30px;
+    font-family: 'Spartan' , sans-serif;
+    font-weight: 400;
+}
+.logo a {
+    text-align: center;
+    font-size:  30px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Spartan' , sans-serif;
+    font-weight: 400;
+}
+.logo a:hover {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+header .header_row {
+    align-items: center;
+    display: flex;
+}
+
+header nav {
+    text-align: right;
+    align-items: center;
+    
+}
+
+header nav a {
+    text-decoration: none;
+    font-family: 'Spartan' , sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 5px 10px;
+    margin: 10px;
+    transition: border-bottom 0.5s ease-in-out;
+    position: relative;
+}
+
+header nav a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+header nav a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+nav > a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+nav > a.active {
+    border-bottom: 2px solid #ff009d;
+    color: #ff009d;
+    transition: all 0s;
+}
+nav > a.active:hover {
+    color: #ff009d;
+    border-bottom: 2px solid #ff009d;
+}
+
+/*----------------------------*/
+/*------------HOME------------*/
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+
+.home {
+
+    width: 100%;
+    height: 600px;
+    background-size: cover !important;
+    background-position: center center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.home > .home_overlay {
+    width: 100%;
+    height: 600px;
+    overflow-y: scroll;
+    position: fixed;
+    background-size: cover;
+    background-position: center center !important;
+    background-origin: content-box;
+    z-index: -100;
+    background-image: url(/images/synthwave.jpg);
+    border: 1px solid white;
+}
+
+@media screen and (min-width: 1600px) {
+    .home {
+
+        width: 100%;
+        height: 800px;
+        background-size: cover !important;
+        background-position: center center !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+    .home > .home_overlay {
+        width: 100%;
+        height: 800px;
+        overflow-y: scroll;
+        position: fixed;
+        background-size: cover;
+        background-position: center center !important;
+        background-origin: content-box;
+        z-index: -100;
+        background-image: url(/images/synthwave.jpg);
+    }
+}
+
+
+.home_name {
+    color: white;
+    text-align: center;
+    font-size: 75px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 100;
+    
+}
+.home_name_span {
+    transition: all 0.2s ease-in-out;
+}
+.home_name_span:hover {
+    color: #ff009d
+}
+
+.home_content {
+    color: white;
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+
+.home_indie,
+.home_science
+{
+    transition: all 0.2s ease-in-out;
+}
+
+.home_indie:hover {
+    color: #d774f5;
+    font-size: 25px; 
+}
+
+.home_science:hover {
+    color: #6689fc;
+    font-size: 25px;
+}
+
+.contactbutton {
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+.contactbutton button {
+    color: white;
+    border: 2px solid white;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+.contactbutton button:hover {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    color: white;
+    border: 2px solid #ff009d;
+    transform: scale(1.1);
+}
+
+.contactbutton button:focus {
+    color: white;
+    border: 2px solid white;
+}
+
+/*----------------------------*/
+/*----------------------------*/
+/*------------TECH------------*/
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+
+/*VSCODE Background: #1e1e1e
+Foreground: #d4d4d4
+COMMENT: #6A9955
+HEADING: #569CD6
+RETURN: #B267E6  
+STRING: #CE9178 
+NUMBER: #B5CEA8   */
+
+.tech {
+    background: #1e1e1e; 
+    text-align: center;
+    border: 1px solid black;
+    color:#d4d4d4;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: monospace;
+}
+.techrow{
+    transition: all 0.2s ease-in-out;
+}
+.techrow:hover {
+    background: #474747;
+}
+
+.techrow_code_container {
+    border: 1px solid white;
+}
+
+.tech_line_num{
+
+    text-align: right;
+    color:#777777;
+}
+.tech_line {
+
+    text-align: left;
+}
+.tech_keyword {
+    color: #B267E6;
+}
+.tech_heading {
+    color: #569CD6;
+}
+.tech_this {
+    color: rgb(38, 102, 155);
+}
+.tech_number {
+    color: rgb(180, 236, 150);
+}
+.tech_string {
+    color: #CE9178;
+}
+
+.tech_comment {
+    color: #6A9955;
+}
+
+
+.tech_image {
+    width: 200%;
+    height: 200%;
+    background-size: cover;
+    background-position: center center !important;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+    font-size: 0px;
+}
+
+.techrow:hover .tech_image {
+    opacity: 1;
+    font-size: 20px;
+}
+
+
+
+
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+/*----------PROJECTS----------*/
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+
+.projects {
+    background-image: linear-gradient(#f79f4d, #fc725a ) ;
+    padding-top: 75px;
+}
+
+.project_image {
+    width: 100%;
+    height:300px;
+    background-size: cover !important;
+    background-position: center center !important;
+    transition: all 0.2s ease-in-out;
+}
+.project_image:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.project_contain {
+    width: 80%;
+    padding-left: 10%;
+
+    font-family: 'Spartan', sans-serif;
+    color: white;
+}
+.project_contain .row {
+    display: flex;
+    align-items: center;
+}
+
+.project_contain h4 {
+    color: white;
+    transition: all 0.2s ease-in-out;
+    
+}
+.project_contain h4:hover,
+.project_contain h4:focus {
+    color: #ff009d;
+    cursor: pointer;
+}
+
+.project_title {
+    text-align: center;
+}
+
+.project_sitecode {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1600px) {
+    .project_image {
+        width: 100%;
+        height:450px;
+        background-size: cover !important;
+        background-position: center center !important;
+        
+    }
+}
+
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+/*----------CONTACT-----------*/
+/*----------------------------*/
+/*----------------------------*/
+
+.contact {
+    width: 100%;
+    color:white;
+    background-image: linear-gradient(#fc725a, #fc9b5a) ;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Spartan', sans-serif;
+}
+.contact .form_container {
+    width: 60%;
+    align-items: center;
+}
+
+.contact h3 {
+    padding-top: 80px;
+    font-weight: 200;
+}
+
+.contact textarea {
+    font-family: 'Spartan', sans-serif;
+    width: 90%;
+    height: 250px;
+    resize: none;
+    padding-bottom: 25x;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid white;
+}
+
+.contact input[type=text] {
+    font-family: 'Spartan', sans-serif;
+    width: 90%;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid white;
+}
+.contact input[type=text]::placeholder,
+.contact textarea::placeholder {
+    color: white;
+}
+
+.contact label {
+    padding-bottom: 5px;
+    padding-top: 30px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    
+}
+
+
+.error-label {
+    width: 100%;
+    color: rgb(88, 0, 110);
+    padding: 4px;
+    padding-bottom: 7px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.contact button {
+    color: white;
+    border: 2px solid white;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    
+}
+.contact button:focus {
+    color: white;
+    border: 2px solid white;
+}
+
+.contact button:hover,
+.contact input[type=text]:hover,
+.contact input[type=text]:focus,
+.contact textarea:hover, 
+.contact textarea:focus {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    color: white;
+    border: 2px solid #ff009d;
+    transform: scale(1.1);
+}
+
+
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+/*-----------FOOTER-----------*/
+
+footer {
+    background: #1e1e1e; 
+    text-align: center;
+    border: 1px solid black;
+    color:#d4d4d4;
+}
+
+footer .logo {
+    padding: 25px;
+    padding-top: 40px;
+}
+
+footer .logo a {
+    font-size: 50px;
+}
+
+footer .footer_row {
+    align-items: center;
+    justify-items: center;
+    display: flex;
+}
+
+footer nav {
+    padding-bottom: 40px;
+    align-content: center;
+}
+
+footer nav a {
+
+    text-decoration: none;
+    font-family: 'Spartan' , sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 5px 20px;
+    margin: 10px;
+    transition: border-bottom 0.5s ease-in-out;
+    position: relative;
+}
+
+footer nav a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+footer nav a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
