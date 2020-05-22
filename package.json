@@ -1,5 +1,6 @@
 {
   "hompagecomments": "Put homepage: https://jsadden.github.io/portfolio/ below when ready to deploy",
+  "homepage": "https://jsadden.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
