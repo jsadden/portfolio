@@ -6,62 +6,126 @@ import '../css/transStyles.css'
 class Projects extends Component {
 
     state = {
-        projects: [
-            {
-                name: 'Tools for a Safe Flight',
-                content:'While at UTC Aerospace (now Collins Aerospace) I developed tools to automate stress analysis procedures on landing gears in Visual Basic.',
-                image:'safeflight.jpg',
-                article: {
-                    headlines: 'When a plane has a hard landing, the job of determining if the landing gear is safe to take off again or not is brought to the in-service stress analysis department at UTC. <br/><br/> I was hired to reduce the turn-around time between the analysts learning of an incident to them providing a dispatch regarding the safety of the landing gear.',
-                    codeButton: false,
-                    codeUrl: null,
-                    items: [
-                        'Reduced turn-around times by 50-75%',
-                        'Designed tools to automate manual tasks',
-                        'Used Visual Basic in Visual Studio',
-                        'Designed intuitive GUIs',
-                        'Worked closely with analysts to iterate design',
-                        'Rewrote the core legacy stress analysis engine in VB',
-                        'Updated technical documentation and procedures'
-                    ]
-                }
-            },
-            {
-                name: 'Modding Inventor',
-                content:'Autodesk Inventor can be modified with C# plug-ins. This project was to improve the workability of pointcloud data within the Inventor modelling enviroment.',
-                image:'inventor.png',
-                article: {
-                    headlines: 'Pointcloud data and reality capture technology has massive untapped potential. <br/><br/> The ability to see millions of point measurements which combine to form an as-built representation of reality which outmatches any engineering drawing is a wonder. <br/><br/> This technology is in its early stages, and is mainly used as a reference to take measurements from instead of being converted directly into 2D and 3D models.',
-                    codeButton: false,
-                    codeUrl: null,
-                    items: [
-                        'Improved workability of pointcloud data',
-                        'Plug-in for Autodesk Inventor coded in C#',
-                        'Seamlessly integrated with Inventor GUI',
-                        'Automated some manual tasks of building a 3D model'
-                    ]
-                }
-            },
-            {
-                name: 'Art and Code',
-                content:'Artworks made entirely of HTML and CSS. These are to stretch the limit of what can be done with these technologies in a creative way.',
-                image:'artandcode.png',
-                article: {
-                    headlines: "I love to make things that look nice. And I love to code. <br/><br/> So when I saw that someone else had made a beautiful portrait out of exclusively HTML and CSS, I thought I'd try it myself. <br/><br/>The gallery includes:",
-                    codeButton: true,
-                    codeUrl: 'https://github.com/jsadden/CSS-Art',
-                    items: [
-                        'Freddie Mercury',
-                        'Darth Vader',
-                        'The Andromeda Galaxy',
-                        'A Glowing Nebula'
-                    ]
-                }
-            }
-        ],
- 
         openArticles: []
     }
+    
+    projects= [
+        {
+            name: 'DC Consulting Designer',
+            content:'I was a Process and Design Engineer when I was at DC Consulting with a wide range of responsibilities.',
+            image:'dcc.png',
+            article: {
+                headlines: "I began the job at this start-up as a designer making 2D and 3D models. <br/><br/>I was later stationed at one of our client's offices to be a process and design engineer on several of their large-scale projects. <br/><br/> I also had other responsibilities such as travelling to site for 3D scanning, website creation and maintenance, and production of promotional videos.",
+                codeButton: true,
+                codeButtonMessage: 'VIEW SITE',
+                codeUrl: 'https://dcconsult.ca/',
+                items: [
+                    'Created 2D drawings in AutoCAD',
+                    'Created 3D models in Autodesk Inventor',
+                    'Utilized 3D scan data in Autodesk Recap',
+                    'Travelled to client sites for 3D scans',
+                    'Client-facing position',
+                    'Created client process flows and RFP packages',
+                    'Interacted with vendors on behalf of the client',
+                    'Designed industrial facility layouts',
+                    "Created and maintained DCC's website",
+                    'Video production in DaVinci Resolve'
+                ]
+            }
+        },
+        {
+            name: 'Video Production',
+            content:'While at DC Consulting I produced and edited the promotional material.',
+            image:'dccvideo.png',
+            article: {
+                headlines: "In addition to my process and design engineering work, I would also produce DC Consulting's promotional videos. <br/><br/> These videos would effectively show the capabilities and scope of DCC's services and expertise.",
+                codeButton: true,
+                codeButtonMessage: 'VIEW VIDEO',
+                codeUrl: 'https://www.youtube.com/watch?v=6CKduT0rDgg',
+                items: [
+                    'Created in DaVinci Resolve',
+                    'Shot footage',
+                    'Editor',
+                    'Copywriter',
+                    'Producer',
+                    'Showcased several DCC technologies'
+                ]
+            }
+        },
+        
+        {
+            name: 'Tools for a Safe Flight',
+            content:'While at UTC Aerospace (now Collins Aerospace) I developed tools to automate stress analysis procedures on landing gears in Visual Basic.',
+            image:'safeflight.jpg',
+            article: {
+                headlines: 'When a plane has a hard landing, the job of determining if the landing gear is safe to take off again or not is brought to the in-service stress analysis department at UTC. <br/><br/> I was hired to reduce the turn-around time between the analysts learning of an incident to them providing a dispatch regarding the safety of the landing gear.',
+                codeButton: false,
+                codeButtonMessage: '',
+                codeUrl: null,
+                items: [
+                    'Reduced turn-around times by 50-75%',
+                    'Designed tools to automate manual tasks',
+                    'Used Visual Basic in Visual Studio',
+                    'Designed intuitive GUIs',
+                    'Worked closely with analysts to iterate design',
+                    'Rewrote the core legacy stress analysis engine in VB',
+                    'Updated technical documentation and procedures'
+                ]
+            }
+        },
+        {
+            name: 'Star Wars Meets Flappy Bird',
+            content:'A game where you pilot the Millenium Falcon through waves of Tie Fighters.',
+            image:'trenchrun.png',
+            article: {
+                headlines: 'This game takes inspiration from the trench run scene in Star Wars as well as the gameplay style of Flappy Bird.<br/><br/> Coded in JavaScript and utilizes the canvas. <br/><br/> How far can you go?',
+                codeButton: true,
+                codeButtonMessage: 'VIEW CODE',
+                codeUrl: 'https://codesandbox.io/s/p92ow083mx',
+                items: [
+                    'Built with Vanilla JS',
+                    'Uses 2D canvas',
+                    'Addictive playing style',
+                    'Includes powerups such as gravity reversal'
+                ]
+            }
+        },
+        {
+            name: 'Modding Inventor',
+            content:'Autodesk Inventor can be modified with C# plug-ins. This project was to improve the workability of pointcloud data within the Inventor modelling enviroment.',
+            image:'inventor.png',
+            article: {
+                headlines: 'Pointcloud data and reality capture technology has massive untapped potential. <br/><br/> The ability to see millions of point measurements which combine to form an as-built representation of reality which outmatches any engineering drawing is a wonder. <br/><br/> This technology is in its early stages, and is mainly used as a reference to take measurements from instead of being converted directly into 2D and 3D models.',
+                codeButton: false,
+                codeButtonMessage: '',
+                codeUrl: null,
+                items: [
+                    'Improved workability of pointcloud data',
+                    'Plug-in for Autodesk Inventor coded in C#',
+                    'Seamlessly integrated with Inventor GUI',
+                    'Automated some manual tasks of building a 3D model'
+                ]
+            }
+        },
+        
+        {
+            name: 'Art and Code',
+            content:'Artworks made entirely of HTML and CSS. These are to stretch the limit of what can be done with these technologies in a creative way.',
+            image:'artandcode.png',
+            article: {
+                headlines: "I love to make things that look nice. And I love to code. <br/><br/> So when I saw that someone else had made a beautiful portrait out of exclusively HTML and CSS, I thought I'd try it myself. <br/><br/>The gallery includes:",
+                codeButton: true,
+                codeButtonMessage: 'VIEW CODE',
+                codeUrl: 'https://github.com/jsadden/CSS-Art',
+                items: [
+                    'Freddie Mercury',
+                    'Darth Vader',
+                    'The Andromeda Galaxy',
+                    'A Glowing Nebula'
+                ]
+            }
+        }
+    ]
 
 
     //adds or removes articles from view using openarticles array
@@ -95,7 +159,7 @@ class Projects extends Component {
                         {item.article.codeButton?
                             <a href={item.article.codeUrl} target='blank'>
                                 <button type='button'>
-                                    VIEW CODE
+                                    {item.article.codeButtonMessage}
                                 </button>
                             </a>
                         :null}
@@ -182,7 +246,7 @@ class Projects extends Component {
                         </div>
                     </div>
                 </div>
-                {this.showProjects(this.state.projects)}
+                {this.showProjects(this.projects)}
             </div>
         )
     }
