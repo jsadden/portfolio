@@ -1,0 +1,222 @@
+import React, {Component} from 'react';
+
+class Tech extends Component {
+
+    state = {
+        showComment: false
+    }
+
+    techStack = [
+        {key: "'HTML'",         value: '// <h3>Hi there</h3>'},
+        {key: "'CSS'",          value: '// .row { color: #ffffff }'},
+        {key: "'JavaScript'",   value: '// const x = () => {}'},
+        {key: "'React JS'",     value: '// this.setState{{}}'},
+        {key: "'Redux'",        value: '// import { createStore }'},
+        {key: "'Formik + Yup'", value: '// validationSchema={ myYup }'},
+        {key: "'UI/UX'",        value: '// cursor: pointer'},
+        {key: "'Node'",         value: '// app.listen( 8001 )'},
+        {key: "'Postman'",      value: '// POST /api/users:id'},
+        {key: "'MongoDB + Robo3T'",      value: '// db.getCollection( "x" )'},
+        {key: "'Mongoose'",     value: '// mongoose.connect( DB, config )'},
+        {key: "'Axios'",        value: '// axios.get( "/api/user", cb )'},
+        {key: "'Git + Github'", value: '// git init'},
+        {key: "'npm'",          value: '// npm install --save react-slick'},
+        {key: "'Heroku'",       value: '// git push heroku master'},
+        {key: "'EmailJS'",      value: '// emailjs.send( )'},
+        {key: "'Visual Studio'",value: '// Where this section style came from'},
+        {key: "'C#'",           value: '// string[] names = new string[num]'},
+        {key: "'Visual Basic'", value: '// Next i'},
+        {key: "'C++'",          value: '// std::cout << "C++"'},
+        {key: "'MATLAB + Simulink'",        value: '// Array starts at 1'},
+        {key: "'DaVinci Resolve'",          value: '// Video editing'},
+        {key: "'AutoCAD'",                  value: '// 2D Layouts'},
+        {key: "'Autodesk Inventor'",        value: '// 3D modelling'},
+        {key: "'Autodesk Recap'",           value: '// Pointclouds'},
+        {key: "'Facility design'",          value: '// Industrial plant layout'},
+        {key: "'Process design'",           value: '// Optimize'},
+        {key: "'Aerospace design'",         value: '// B.Eng'},
+    ]
+
+
+    createTech(num) {
+        return (
+            <div style={{paddingLeft:'45px'}}>  
+                <span className='tech_string'>{this.techStack[num].key}</span>,
+                <span style={{float:'right'}}>
+                <span style={{paddingRight: '50px'}} className='tech_comment tech_image'>{this.techStack[num].value}</span>
+                </span>
+            </div>
+        )
+    }
+
+    rows = [
+        <div>   
+            <span className='tech_keyword'>class </span> 
+            <span className='tech_heading'>Skills </span>
+            {"\u007B"}
+        </div>,
+
+        <div style={{paddingLeft:'15px'}}>  
+            <span className='tech_comment'>// I love to learn new things to expand my skillset</span>
+        </div>,
+
+        <div style={{paddingLeft:'15px'}}>  
+            <span className='tech_keyword'>constructor </span> ( ) {"\u007B"}
+        </div>,
+
+        <div style={{paddingLeft:'30px'}}>  
+            <span className='tech_this'>this</span>.
+            <span className='tech_heading'>integrity </span> = 
+            <span className='tech_this'> true</span>
+        </div>,
+
+        <div style={{paddingLeft:'30px'}}>  
+            <span className='tech_this'>this</span>.
+            <span className='tech_heading'>hardWork </span> = 
+            <span className='tech_this'> true</span>
+        </div>,
+
+        <div style={{paddingLeft:'30px'}}>  
+            <span className='tech_this'>this</span>.
+            <span className='tech_heading'>commonSense </span> = 
+            <span className='tech_this'> true</span>
+        </div>,
+
+        <div style={{paddingLeft:'30px'}}>  
+            <span className='tech_this'>this</span>.
+            <span className='tech_heading'>adaptability </span> = 
+            <span className='tech_number'> 10</span>
+        </div>,
+
+        <div style={{paddingLeft:'15px'}}>   
+            {"\u007D"}
+        </div>,
+
+        <div style={{paddingLeft:'15px'}}>  
+            <span className='tech_heading'>frontEnd </span> ( ) {"\u007B"}
+        </div>,
+
+        <div style={{paddingLeft:'30px'}}>  
+        <span className='tech_keyword'>return </span> [
+        </div>,
+
+        this.createTech(0),
+        this.createTech(1),
+        this.createTech(2),
+        this.createTech(3),
+        this.createTech(4),
+        this.createTech(5),
+        this.createTech(6),
+
+        <div style={{paddingLeft:'30px'}}>]</div>,
+
+        <div style={{paddingLeft:'15px'}}>   
+            {"\u007D"}
+        </div>,
+
+        <div style={{paddingLeft:'15px'}}>  
+        <span className='tech_heading'>backEnd </span> ( ) {"\u007B"}
+        </div>,
+
+        <div style={{paddingLeft:'30px'}}>  
+        <span className='tech_keyword'>return </span> [
+        </div>,
+
+        this.createTech(7),
+        this.createTech(8),
+        this.createTech(9),
+        this.createTech(10),
+        this.createTech(11),
+
+        <div style={{paddingLeft:'30px'}}>]</div>,
+
+        <div style={{paddingLeft:'15px'}}>   
+        {"\u007D"}
+        </div>,
+
+        <div style={{paddingLeft:'15px'}}>  
+        <span className='tech_heading'>platforms </span> ( ) {"\u007B"}
+        </div>,
+
+        <div style={{paddingLeft:'30px'}}>  
+        <span className='tech_keyword'>return </span> [
+        </div>,
+
+        this.createTech(12),
+        this.createTech(13),
+        this.createTech(14),
+        this.createTech(15),
+        this.createTech(16),
+
+        <div style={{paddingLeft:'30px'}}>]</div>,
+
+        <div style={{paddingLeft:'15px'}}>   
+        {"\u007D"}
+        </div>,
+        
+        <div style={{paddingLeft:'15px'}}>  
+        <span className='tech_heading'>otherLanguages </span> ( ) {"\u007B"}
+        </div>,
+
+        <div style={{paddingLeft:'30px'}}>  
+        <span className='tech_keyword'>return </span> [
+        </div>,
+
+        this.createTech(17),
+        this.createTech(18),
+        this.createTech(19),
+        this.createTech(20),
+
+        <div style={{paddingLeft:'30px'}}>]</div>,
+
+        <div style={{paddingLeft:'15px'}}>   
+        {"\u007D"}
+        </div>,
+
+        <div style={{paddingLeft:'15px'}}>  
+        <span className='tech_heading'>miscAndEng </span> ( ) {"\u007B"}
+        </div>,
+
+        <div style={{paddingLeft:'30px'}}>  
+        <span className='tech_keyword'>return </span> [
+        </div>,
+
+        this.createTech(21),
+        this.createTech(22),
+        this.createTech(23),
+        this.createTech(24),
+        this.createTech(25),
+        this.createTech(26),
+        this.createTech(27),
+
+        <div style={{paddingLeft:'30px'}}>]</div>,
+
+        <div style={{paddingLeft:'15px'}}>   
+        {"\u007D"}
+        </div>,
+
+        <div>   
+            {"\u007D"}
+        </div>
+    ]
+
+    createRows() {
+        return this.rows.map((row,i) => (
+            <div key={i} className='techrow row'>
+                <div className='two columns tech_line_num'>{i + 1}</div>
+                <div className='eight columns tech_line'>{row}</div>
+            </div>
+        ))
+    }
+
+    render()
+    {
+        return(
+        <div className='tech'>
+            {this.createRows()}
+        </div>
+        )
+    }
+}
+
+export default Tech;
