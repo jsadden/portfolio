@@ -9,8 +9,6 @@ a {
     text-decoration: none;
 }
 
-
-
 /*-----------HEADER-----------*/
 /*----------------------------*/
 /*----------------------------*/
@@ -361,7 +359,7 @@ NUMBER: #B5CEA8   */
 
 .project_sitecode {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 45px;
 }
 
 @media screen and (min-width: 1600px) {
