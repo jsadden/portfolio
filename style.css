@@ -131,7 +131,7 @@ nav > a.active:hover {
     background-position: center center !important;
     background-origin: content-box;
     z-index: -100;
-    background-image: url(/images/synthwave.jpg);
+    background-image: url(images/synthwave.jpg);
     border: 1px solid white;
 }
 
