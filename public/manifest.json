@@ -1,0 +1,15 @@
+{
+  "short_name": "Jim Sadden",
+  "name": "Jim Sadden Portfolio",
+  "icons": [
+    {
+      "src": "favicon_small.PNG",
+      "sizes": "50x50",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1e1e1e",
+  "background_color": "#1e1e1e"
+}
