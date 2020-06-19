@@ -18,7 +18,11 @@ export const FormElem = (props) => {
             template = <div className='row'>
                 <div className='twelve columns'>
 
+<<<<<<< HEAD
                     
+=======
+                    {/* Display error only if there is one and the element has been touched */}
+>>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
                     {props.errors && props.touched ?
                         <div className='error-label'>
                             {props.errors}
@@ -42,7 +46,11 @@ export const FormElem = (props) => {
             template = <div className='row'>
                 <div className='twelve columns'>
                     
+<<<<<<< HEAD
                     
+=======
+                    {/* Display error only if there is one and the element has been touched */}
+>>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
                     {props.errors && props.touched ?
                         <div className='error-label'>
                             {props.errors}
