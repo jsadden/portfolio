@@ -7,13 +7,10 @@ class Tech extends Component {
     }
 
     techStack = [
-<<<<<<< HEAD
         {key: "'Python'",            value: '// def myFunc():'},
         {key: "'Selenium'",          value: '// webdriver.Chrome(PATH)'},
         {key: "'Beautiful Soup'",    value: '// link = soup.find("a")[href]'},
         {key: "'Unit Testing'",      value: '// assert search.test()'},
-=======
->>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
         {key: "'HTML'",         value: '// <h3>Hi there</h3>'},
         {key: "'CSS'",          value: '// .row { color: #ffffff }'},
         {key: "'JavaScript'",   value: '// const x = () => {}'},
@@ -101,11 +98,7 @@ class Tech extends Component {
         </div>,
 
         <div style={{paddingLeft:'15px'}}>  
-<<<<<<< HEAD
         <span className='tech_heading'>pythonic </span> ( ) {"\u007B"}
-=======
-            <span className='tech_heading'>frontEnd </span> ( ) {"\u007B"}
->>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
         </div>,
 
         <div style={{paddingLeft:'30px'}}>  
@@ -116,12 +109,6 @@ class Tech extends Component {
         this.createTech(1),
         this.createTech(2),
         this.createTech(3),
-<<<<<<< HEAD
-=======
-        this.createTech(4),
-        this.createTech(5),
-        this.createTech(6),
->>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
 
         <div style={{paddingLeft:'30px'}}>]</div>,
 
@@ -130,91 +117,56 @@ class Tech extends Component {
         </div>,
 
         <div style={{paddingLeft:'15px'}}>  
-<<<<<<< HEAD
             <span className='tech_heading'>frontEnd </span> ( ) {"\u007B"}
-=======
-        <span className='tech_heading'>backEnd </span> ( ) {"\u007B"}
->>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
         </div>,
 
         <div style={{paddingLeft:'30px'}}>  
         <span className='tech_keyword'>return </span> [
         </div>,
 
-<<<<<<< HEAD
         this.createTech(4),
         this.createTech(5),
         this.createTech(6),
-=======
->>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
         this.createTech(7),
         this.createTech(8),
         this.createTech(9),
         this.createTech(10),
-<<<<<<< HEAD
-=======
-        this.createTech(11),
->>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
 
         <div style={{paddingLeft:'30px'}}>]</div>,
 
         <div style={{paddingLeft:'15px'}}>   
-<<<<<<< HEAD
             {"\u007D"}
         </div>,
 
         <div style={{paddingLeft:'15px'}}>  
         <span className='tech_heading'>backEnd </span> ( ) {"\u007B"}
-=======
-        {"\u007D"}
-        </div>,
-
-        <div style={{paddingLeft:'15px'}}>  
-        <span className='tech_heading'>platforms </span> ( ) {"\u007B"}
->>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
         </div>,
 
         <div style={{paddingLeft:'30px'}}>  
         <span className='tech_keyword'>return </span> [
         </div>,
 
-<<<<<<< HEAD
         this.createTech(11),
-=======
->>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
         this.createTech(12),
         this.createTech(13),
         this.createTech(14),
         this.createTech(15),
-<<<<<<< HEAD
-=======
-        this.createTech(16),
->>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
 
         <div style={{paddingLeft:'30px'}}>]</div>,
 
         <div style={{paddingLeft:'15px'}}>   
         {"\u007D"}
         </div>,
-<<<<<<< HEAD
 
         <div style={{paddingLeft:'15px'}}>  
         <span className='tech_heading'>platforms </span> ( ) {"\u007B"}
-=======
-        
-        <div style={{paddingLeft:'15px'}}>  
-        <span className='tech_heading'>otherLanguages </span> ( ) {"\u007B"}
->>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
         </div>,
 
         <div style={{paddingLeft:'30px'}}>  
         <span className='tech_keyword'>return </span> [
         </div>,
 
-<<<<<<< HEAD
         this.createTech(16),
-=======
->>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
         this.createTech(17),
         this.createTech(18),
         this.createTech(19),
@@ -225,15 +177,9 @@ class Tech extends Component {
         <div style={{paddingLeft:'15px'}}>   
         {"\u007D"}
         </div>,
-<<<<<<< HEAD
         
         <div style={{paddingLeft:'15px'}}>  
         <span className='tech_heading'>otherLanguages </span> ( ) {"\u007B"}
-=======
-
-        <div style={{paddingLeft:'15px'}}>  
-        <span className='tech_heading'>miscAndEng </span> ( ) {"\u007B"}
->>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
         </div>,
 
         <div style={{paddingLeft:'30px'}}>  
@@ -244,7 +190,6 @@ class Tech extends Component {
         this.createTech(22),
         this.createTech(23),
         this.createTech(24),
-<<<<<<< HEAD
 
         <div style={{paddingLeft:'30px'}}>]</div>,
 
@@ -267,11 +212,6 @@ class Tech extends Component {
         this.createTech(29),
         this.createTech(30),
         this.createTech(31),
-=======
-        this.createTech(25),
-        this.createTech(26),
-        this.createTech(27),
->>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
 
         <div style={{paddingLeft:'30px'}}>]</div>,
 
