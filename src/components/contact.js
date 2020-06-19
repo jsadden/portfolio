@@ -40,10 +40,6 @@ class Contact extends Component {
                 <div className='form_container'>
                 
                 <h3>Shoot me a message</h3>
-<<<<<<< HEAD
-=======
-                {/*  A form to fill out to contact me built on Formik and Yup   */}
->>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
                 <Formik
                     initialValues={{
                         email: '',
@@ -114,10 +110,6 @@ class Contact extends Component {
                                 SEND
                             </button>
                             
-<<<<<<< HEAD
-=======
-                            {/*  Email sent successfully or failed messages   */ }
->>>>>>> b74ab0d69e4e2fcb80a29d35ec54c8263555a444
                             {this.state.success !== null?
                                 this.state.success === true?
                                     <div>
