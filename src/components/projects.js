@@ -11,6 +11,23 @@ class Projects extends Component {
     
     projects= [
         {
+            name: 'Rotten Tomatoes Scraper',
+            content:'I created a web scraper to get user and critic ratings from Rotten Tomatoes',
+            image:'rottenGraph.png',
+            article: {
+                headlines: "I was interested in the gap between the user scores and critic scores depending on the genre of the film. <br/><br/> I used Python's Beautiful Soup and Selenium modules to build a web scraper to get the data I needed. <br/><br/> I then used matplotlib to organize and plot the gap by genre. (art & foreign had the largest gap)",
+                codeButton: true,
+                codeButtonMessage: 'VIEW CODE',
+                codeUrl: 'https://github.com/jsadden/RottenScraper',
+                items: [
+                    'Python',
+                    'Beautiful Soup',
+                    'Selenium',
+                    'matplotlib'
+                ]
+            }
+        },
+        {
             name: 'DC Consulting Designer',
             content:'I was a Process and Design Engineer when I was at DC Consulting with a wide range of responsibilities.',
             image:'dcc.png',
