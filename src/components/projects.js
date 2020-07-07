@@ -11,6 +11,30 @@ class Projects extends Component {
     
     projects= [
         {
+            name: 'Full Stack Food App',
+            content:'I made a full stack web application to recommend people specific menu items around their location.',
+            image:'whatsgoodaroundhere.png',
+            article: {
+                headlines: "What's Good Around Here is a web app designed to recommend you the best dishes in your neighbourhood. <br/><br/> The site can be found by clicking <a href='https://whats-good-around-here.herokuapp.com/' target='_blank'>HERE.</a>" ,
+                codeButton: true,
+                codeButtonMessage: 'VIEW CODE',
+                codeUrl: 'https://github.com/jsadden/whatsgoodaroundhere',
+                items: [
+                    'React front-end',
+                    'Node back-end',
+                    'Axios',
+                    'Express',
+                    'Redux',
+                    'Formik & Yup',
+                    'Mongoose',
+                    'MongoDB',
+                    'MapBox API',
+                    'Postman',
+                    'Deployed on Heroku'
+                ]
+            }
+        },
+        {
             name: 'Rotten Tomatoes Scraper',
             content:'I created a web scraper to get user and critic ratings from Rotten Tomatoes',
             image:'rottenGraph.png',
