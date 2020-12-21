@@ -19,6 +19,7 @@ class Tech extends Component {
         {key: "'Formik + Yup'", value: '// validationSchema={ myYup }'},
         {key: "'UI/UX'",        value: '// cursor: pointer'},
         {key: "'Node'",         value: '// app.listen( 8001 )'},
+        {key: "'Express'",      value: '// app.use("/")'},
         {key: "'Postman'",      value: '// POST /api/users:id'},
         {key: "'MongoDB + Robo3T'",      value: '// db.getCollection( "x" )'},
         {key: "'Mongoose'",     value: '// mongoose.connect( DB, config )'},
@@ -151,6 +152,7 @@ class Tech extends Component {
         this.createTech(13),
         this.createTech(14),
         this.createTech(15),
+        this.createTech(16),
 
         <div style={{paddingLeft:'30px'}}>]</div>,
 
@@ -166,11 +168,11 @@ class Tech extends Component {
         <span className='tech_keyword'>return </span> [
         </div>,
 
-        this.createTech(16),
         this.createTech(17),
         this.createTech(18),
         this.createTech(19),
         this.createTech(20),
+        this.createTech(21),
 
         <div style={{paddingLeft:'30px'}}>]</div>,
 
@@ -186,10 +188,10 @@ class Tech extends Component {
         <span className='tech_keyword'>return </span> [
         </div>,
 
-        this.createTech(21),
         this.createTech(22),
         this.createTech(23),
         this.createTech(24),
+        this.createTech(25),
 
         <div style={{paddingLeft:'30px'}}>]</div>,
 
@@ -205,13 +207,13 @@ class Tech extends Component {
         <span className='tech_keyword'>return </span> [
         </div>,
 
-        this.createTech(25),
         this.createTech(26),
         this.createTech(27),
         this.createTech(28),
         this.createTech(29),
         this.createTech(30),
         this.createTech(31),
+        this.createTech(32),
 
         <div style={{paddingLeft:'30px'}}>]</div>,
 

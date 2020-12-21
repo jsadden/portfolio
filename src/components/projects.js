@@ -11,6 +11,32 @@ class Projects extends Component {
     
     projects= [
         {
+            name: 'Full Stack Marketplace',
+            content:'Buy and sell web app.',
+            image:'marketplaceapp.png',
+            article: {
+                headlines: "Marketplace is a web app which allows you to find great deals locally and sell your items for cash. <br/><br/> The site can be found by clicking <a href='https://marketplace-app-js.herokuapp.com/' target='_blank'>HERE.</a>" ,
+                codeButton: true,
+                codeButtonMessage: 'VIEW CODE',
+                codeUrl: 'https://github.com/jsadden/marketplace',
+                items: [
+                    'React',
+                    'Redux',
+                    'Axios',
+                    'Node',
+                    'Express',
+                    'Formik & Yup',
+                    'Mongoose',
+                    'MongoDB',
+                    "Cloudinary API",
+                    "JWT Auth",
+                    "Bootstrap",
+                    'Postman',
+                    'Deployed on Heroku'
+                ]
+            }
+        },
+        {
             name: 'Full Stack Food App',
             content:'I made a full stack web application to recommend people specific menu items around their location.',
             image:'whatsgoodaroundhere.png',
