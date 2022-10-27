@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
-import { useFrame } from '@react-three/fiber';
+import { useFrame, useLoader } from '@react-three/fiber';
+import { TextureLoader } from 'three';
 
 interface Props {
   position: {
@@ -13,12 +14,15 @@ interface Props {
     height: number;
   };
   color: string;
+  imagePath?: string;
 }
 
-export const IconBox = ({ position, size, color }: Props) => {
+export const IconBox = ({ position, size, color, imagePath }: Props) => {
   const mesh = useRef<THREE.Mesh>(null!);
   const initialAngle = Math.PI * 0.25 * Math.random();
   const randomOffset = Math.random();
+
+  const imageMap = useLoader(TextureLoader, imagePath || '/favicon_small.png');
 
   // animate rocking motion
   useFrame(() => {
@@ -34,7 +38,7 @@ export const IconBox = ({ position, size, color }: Props) => {
   return (
     <mesh ref={mesh} position={[position.x, position.y, position.z]}>
       <boxGeometry args={[size?.length || 3, size?.width || 3, size?.height || 3]} />
-      <meshStandardMaterial color={color} />
+      <meshStandardMaterial color={color} map={imagePath ? imageMap : undefined} />
     </mesh>
   );
 };

@@ -40,7 +40,6 @@ export const Content = () => {
           <div className={styles.skillText}>FusionAuth</div>
           <div className={styles.skillText}>Cloudinary</div>
           <div className={styles.skillText}>Google Cloud Services</div>
-          <div className={styles.skillText}>AWS Rekognition</div>
         </Browser>
 
         <Browser alignRight>
