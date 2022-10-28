@@ -6,11 +6,16 @@ interface Props {
   title: string;
 }
 
-export const Terminal = ({ title, entries }: Props) => {
+export const GraphPaper = ({ title, entries }: Props) => {
   return (
-    <div className={styles.terminalContainer}>
+    <div className={styles.paperContainer}>
+      <div className={styles.paperEdgeContainer}>
+        <div className={styles.paperEdgeTop} />
+        <div className={styles.paperEdgeBottom} />
+      </div>
+
       <div className={styles.line}>
-        <div className={styles.title}>{`$ ls "${title}"`}</div>
+        <div className={styles.title}>{title}</div>
       </div>
 
       {entries.map((entry, i) => (
@@ -18,11 +23,6 @@ export const Terminal = ({ title, entries }: Props) => {
           <div className={styles.entryText}>{entry}</div>
         </div>
       ))}
-
-      <div className={styles.line}>
-        <div>{`$`}</div>
-        <div className={styles.cursorHighlight} />
-      </div>
     </div>
   );
 };

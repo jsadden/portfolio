@@ -1,0 +1,65 @@
+.paperContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #221fae;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 7rem;
+  border-bottom-left-radius: 15px;
+  padding: 1.5rem 1rem;
+  width: 300px;
+  background-image: repeating-linear-gradient(#cccccc3d 0 1px, transparent 1px 100%), repeating-linear-gradient(90deg, #cccccc3d 0 1px, transparent 1px 100%);
+  background-size: 15px 15px;
+}
+
+.paperEdgeContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 30px;
+  background-color: #55549e;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.paperEdgeTop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 30px;
+  width: 30px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #55549e;
+}
+
+.paperEdgeBottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #1a197d;
+}
+
+.line {
+  font-family: 'Walter Turncoat', Arial, Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  padding: 0.25rem 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.entryText {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+}

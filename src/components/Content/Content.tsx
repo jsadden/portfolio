@@ -4,6 +4,7 @@ import { Browser } from '../Browser';
 import { ServerRack } from '../ServerRack';
 import { Editor } from '../Editor';
 import { Terminal } from '../Terminal';
+import { GraphPaper } from '../GraphPaper';
 
 export const Content = () => {
   return (
@@ -24,7 +25,7 @@ export const Content = () => {
 
         <Terminal title="Cloud & CICD" entries={['AWS', 'Terraform', 'Gitlab CICD', 'Bash']} />
 
-        <Browser title="Engineering" entries={['MATLAB', 'AutoCAD', 'Autodesk Inventor']} />
+        <GraphPaper title="Engineering" entries={['MATLAB', 'AutoCAD', 'Autodesk Inventor']} />
       </div>
     </div>
   );
