@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './styles.module.css';
 import { Browser } from '../Browser';
 import { ServerRack } from '../ServerRack';
+import { Editor } from '../Editor';
 
 export const Content = () => {
   return (
@@ -18,7 +19,7 @@ export const Content = () => {
 
         <ServerRack title="Back-End" entries={['Node', 'Express', 'Serverless', 'GraphQL', 'PostgreSQL', 'MongoDB']} />
 
-        <Browser title="APIs" entries={['Stripe', 'Mapbox', 'FusionAuth', 'Cloudinary', 'Google Cloud Services']} />
+        <Editor title="APIs" entries={['Stripe', 'Mapbox', 'FusionAuth', 'Cloudinary', 'Google Cloud Services']} />
 
         <Browser alignRight title="Cloud & CICD" entries={['AWS', 'Terraform', 'Gitlab CICD', 'Bash']} />
 
