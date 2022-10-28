@@ -1,0 +1,34 @@
+.terminalContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #242424;
+  border: 1px solid #686868;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 7rem;
+  padding: 1rem;
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  align-self: flex-end;
+}
+
+.line {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+}
+
+.entryText {
+  margin-left: 1.25rem;
+  display: flex;
+}
+
+.cursorHighlight {
+  width: 10px;
+  height: 1.25em;
+  margin-left: 0.5rem;
+  background-color: #686868;
+}
