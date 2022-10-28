@@ -3,10 +3,11 @@ import styles from './styles.module.css';
 
 interface Props {
   alignRight?: boolean;
-  children: React.ReactNode | React.ReactNode[];
+  entries: string[];
+  title: string;
 }
 
-export const Browser = ({ children, alignRight }: Props) => {
+export const Browser = ({ alignRight, title, entries }: Props) => {
   return (
     <div className={`${styles.browserContainer} ${alignRight ? styles.alignRight : ''}`}>
       <div className={styles.browserHeader} />
@@ -14,7 +15,12 @@ export const Browser = ({ children, alignRight }: Props) => {
       <div className={styles.headerYellow} />
       <div className={styles.headerGreen} />
 
-      {children}
+      <div className={styles.title}>{title}</div>
+      {entries.map((entry, i) => (
+        <div key={i} className={styles.entryText}>
+          {entry}
+        </div>
+      ))}
     </div>
   );
 };

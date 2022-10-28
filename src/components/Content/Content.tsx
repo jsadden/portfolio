@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 import { Browser } from '../Browser';
+import { ServerRack } from '../ServerRack';
 
 export const Content = () => {
   return (
@@ -13,49 +14,15 @@ export const Content = () => {
       </div>
 
       <div className={styles.skillsContainer}>
-        <Browser>
-          <div className={styles.skillTitle}>Front-End</div>
-          <div className={styles.skillText}>HTML</div>
-          <div className={styles.skillText}>CSS & SASS</div>
-          <div className={styles.skillText}>JavaScript</div>
-          <div className={styles.skillText}>Typescript</div>
-          <div className={styles.skillText}>React</div>
-          <div className={styles.skillText}>Redux</div>
-        </Browser>
+        <Browser title="Front-End" entries={['HTML', 'CSS & SASS', 'JavaScript', 'TypeScript', 'React', 'Redux']} />
 
-        <Browser alignRight>
-          <div className={styles.skillTitle}>Back-End</div>
-          <div className={styles.skillText}>Node</div>
-          <div className={styles.skillText}>Express</div>
-          <div className={styles.skillText}>Serverless</div>
-          <div className={styles.skillText}>GraphQL</div>
-          <div className={styles.skillText}>PostgreSQL</div>
-          <div className={styles.skillText}>MongoDB</div>
-        </Browser>
+        <ServerRack title="Back-End" entries={['Node', 'Express', 'Serverless', 'GraphQL', 'PostgreSQL', 'MongoDB']} />
 
-        <Browser>
-          <div className={styles.skillTitle}>APIs</div>
-          <div className={styles.skillText}>Stripe</div>
-          <div className={styles.skillText}>Mapbox</div>
-          <div className={styles.skillText}>FusionAuth</div>
-          <div className={styles.skillText}>Cloudinary</div>
-          <div className={styles.skillText}>Google Cloud Services</div>
-        </Browser>
+        <Browser title="APIs" entries={['Stripe', 'Mapbox', 'FusionAuth', 'Cloudinary', 'Google Cloud Services']} />
 
-        <Browser alignRight>
-          <div className={styles.skillTitle}>Cloud & CICD</div>
-          <div className={styles.skillText}>AWS</div>
-          <div className={styles.skillText}>Terraform</div>
-          <div className={styles.skillText}>Gitlab CICD</div>
-          <div>Bash</div>
-        </Browser>
+        <Browser alignRight title="Cloud & CICD" entries={['AWS', 'Terraform', 'Gitlab CICD', 'Bash']} />
 
-        <Browser>
-          <div className={styles.skillTitle}>Engineering</div>
-          <div className={styles.skillText}>MATLAB</div>
-          <div className={styles.skillText}>AutoCAD</div>
-          <div className={styles.skillText}>Autodesk Inventor</div>
-        </Browser>
+        <Browser title="Engineering" entries={['MATLAB', 'AutoCAD', 'Autodesk Inventor']} />
       </div>
     </div>
   );

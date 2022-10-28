@@ -58,3 +58,15 @@
   z-index: 2;
   background-color: #3b9e43;
 }
+
+.title {
+  margin-top: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.entryText {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
