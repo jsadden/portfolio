@@ -32,6 +32,12 @@ import matlabIcon from './assets/matlab.png';
 import autocadIcon from './assets/autocad.png';
 import inventorIcon from './assets/inventor.png';
 
+import alibitechIcon from './assets/alibitech.png';
+import marketplaceAppIcon from './assets/marketplaceapp.png';
+import foodAppIcon from './assets/foodapp.png';
+import utcIcon from './assets/utc.png';
+import dccIcon from './assets/dcconsult.png';
+
 export const Scene = () => {
   const pointLightRef = useRef<THREE.PointLight>(null!);
   const ambientLightRef = useRef<THREE.AmbientLight>(null!);
@@ -86,6 +92,46 @@ export const Scene = () => {
         <IconBox position={{ x: 0, y: -180, z: -30 }} color={'#fff'} imagePath={matlabIcon} />
         <IconBox position={{ x: 10, y: -175, z: -30 }} color={'#fff'} imagePath={inventorIcon} />
       </>
+
+      <IconBox
+        size={{ length: 12, width: 12, height: 12 }}
+        position={{ x: 25, y: -235, z: -35 }}
+        angle={{ x: 0.1, y: 0.15, z: 0.1 }}
+        color={'#fff'}
+        imagePath={alibitechIcon}
+      />
+
+      <IconBox
+        size={{ length: 12, width: 12, height: 12 }}
+        position={{ x: -30, y: -290, z: -35 }}
+        angle={{ x: 0.1, y: 0.15, z: 0.1 }}
+        color={'#fff'}
+        imagePath={marketplaceAppIcon}
+      />
+
+      <IconBox
+        size={{ length: 12, width: 12, height: 12 }}
+        position={{ x: 30, y: -335, z: -35 }}
+        angle={{ x: 0.1, y: 0.15, z: 0.1 }}
+        color={'#fff'}
+        imagePath={foodAppIcon}
+      />
+
+      <IconBox
+        size={{ length: 12, width: 12, height: 12 }}
+        position={{ x: -30, y: -390, z: -35 }}
+        angle={{ x: 0.1, y: 0.15, z: 0.1 }}
+        color={'#fff'}
+        imagePath={utcIcon}
+      />
+
+      <IconBox
+        size={{ length: 12, width: 12, height: 12 }}
+        position={{ x: 30, y: -435, z: -35 }}
+        angle={{ x: 0.1, y: 0.15, z: 0.1 }}
+        color={'#fff'}
+        imagePath={dccIcon}
+      />
     </>
   );
 };

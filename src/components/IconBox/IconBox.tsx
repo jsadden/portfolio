@@ -13,11 +13,16 @@ interface Props {
     width: number;
     height: number;
   };
+  angle?: {
+    x?: number;
+    y?: number;
+    z?: number;
+  };
   color: string;
   imagePath?: string;
 }
 
-export const IconBox = ({ position, size, color, imagePath }: Props) => {
+export const IconBox = ({ position, size, color, imagePath, angle }: Props) => {
   const mesh = useRef<THREE.Mesh>(null!);
   const initialAngle = Math.PI * 0.25 * Math.random();
   const randomOffset = Math.random();
@@ -26,9 +31,9 @@ export const IconBox = ({ position, size, color, imagePath }: Props) => {
 
   // animate rocking motion
   useFrame(() => {
-    const angleX = Math.sin(Date.now() * 0.002 + randomOffset) * Math.PI * 0.25 + initialAngle;
-    const angleY = Math.sin(Date.now() * 0.0005 + randomOffset) * Math.PI * 0.15 + initialAngle;
-    const angleZ = Math.sin(Date.now() * 0.001 + randomOffset) * Math.PI * 0.25 + initialAngle;
+    const angleX = Math.sin(Date.now() * 0.002 + randomOffset) * Math.PI * (angle?.x || 0.25) + initialAngle;
+    const angleY = Math.sin(Date.now() * 0.0005 + randomOffset) * Math.PI * (angle?.y || 0.15) + initialAngle;
+    const angleZ = Math.sin(Date.now() * 0.001 + randomOffset) * Math.PI * (angle?.z || 0.25) + initialAngle;
 
     mesh.current.rotation.z = angleZ;
     mesh.current.rotation.x = angleX;
