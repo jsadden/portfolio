@@ -26,7 +26,7 @@
 .heroName {
   font-size: 100px;
   font-weight: 600;
-  margin-bottom: 3rem;
+  margin-bottom: 8rem;
   line-height: 0.75;
 }
 
@@ -34,6 +34,13 @@
   font-size: 20px;
   font-weight: 500;
   color: #f7b1e7;
+}
+
+.subTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #f7b1e7;
+  margin: 4rem auto 8rem auto;
 }
 
 .skillsContainer {

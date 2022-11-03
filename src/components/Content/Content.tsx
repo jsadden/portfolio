@@ -5,6 +5,7 @@ import { ServerRack } from '../ServerRack';
 import { Editor } from '../Editor';
 import { Terminal } from '../Terminal';
 import { GraphPaper } from '../GraphPaper';
+import { ProjectList } from '../ProjectList';
 
 export const Content = () => {
   return (
@@ -12,8 +13,7 @@ export const Content = () => {
       <div className={styles.heroContainer}>
         <div className={styles.hero}>Hello,</div>
         <div className={styles.heroName}>I'm Jim.</div>
-
-        <div className={styles.subHero}>And this a brief history of me.</div>
+        <div className={styles.subHero}>And these are some of my skills.</div>
       </div>
 
       <div className={styles.skillsContainer}>
@@ -27,6 +27,9 @@ export const Content = () => {
 
         <GraphPaper title="Engineering" entries={['MATLAB', 'AutoCAD', 'Autodesk Inventor']} />
       </div>
+
+      <div className={styles.subTitle}>And these are some of my works.</div>
+      <ProjectList />
     </div>
   );
 };

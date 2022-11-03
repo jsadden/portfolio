@@ -47,7 +47,7 @@ export const Scene = () => {
     <>
       <ambientLight ref={ambientLightRef} intensity={0.1} />
       <pointLight ref={pointLightRef} intensity={2} position={[-100, 0, 150]} />
-      <Stars radius={200} />
+      <Stars radius={800} factor={14} />
 
       <>
         <IconBox position={{ x: 7, y: -30, z: -30 }} color={'#fff'} imagePath={htmlIcon} />

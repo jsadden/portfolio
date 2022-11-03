@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  margin-bottom: 12rem;
+  padding: 2rem 2rem 2rem 10%;
+  width: 45%;
+  overflow: hidden;
+}
+
+.alignRight {
+  align-self: flex-end;
+  padding: 2rem 10% 2rem 2rem;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin-bottom: 0.5rem;
+  white-space: pre-wrap;
+}
+
+.skillRow {
+  display: flex;
+}
+.skillList {
+  columns: 2;
+  align-items: center;
+}
+
+.skill {
+  margin-bottom: 0.5rem;
+}
