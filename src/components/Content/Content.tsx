@@ -6,6 +6,7 @@ import { Editor } from '../Editor';
 import { Terminal } from '../Terminal';
 import { GraphPaper } from '../GraphPaper';
 import { ProjectList } from '../ProjectList';
+import { SocialLinks } from '../SocialLinks';
 
 export const Content = () => {
   return (
@@ -30,6 +31,9 @@ export const Content = () => {
 
       <div className={styles.subTitle}>And these are some of my works.</div>
       <ProjectList />
+
+      <div className={styles.subTitle}>And these are some of my links.</div>
+      <SocialLinks />
     </div>
   );
 };
