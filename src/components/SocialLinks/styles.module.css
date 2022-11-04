@@ -8,6 +8,7 @@
   border-radius: 8px;
   padding: 2rem;
   width: 50%;
+  max-width: 1440px;
   overflow: hidden;
 }
 
@@ -28,4 +29,23 @@
 
 .itemText {
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .itemText {
+    text-align: center;
+    font-size: 14px;
+  }
 }

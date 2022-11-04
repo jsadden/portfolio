@@ -70,3 +70,21 @@
   display: flex;
   margin-bottom: 0.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .browserContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    font-size: 16px;
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .entryText {
+    font-size: 14px;
+  }
+}

@@ -43,3 +43,25 @@
   font-weight: 600;
   color: #ffffff87;
 }
+
+@media screen and (max-width: 768px) {
+  .editorContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    font-size: 16px;
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .entryText {
+    font-size: 14px;
+  }
+
+  .lineNumber {
+    font-size: 14px;
+  }
+}

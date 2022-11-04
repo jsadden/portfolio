@@ -44,10 +44,11 @@
 }
 
 .skillsContainer {
-  /* height: 270vh; */
   width: 100%;
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .skillTitle {
@@ -60,4 +61,32 @@
 .skillText {
   display: flex;
   margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    font-size: 50px;
+  }
+
+  .heroName {
+    font-size: 80px;
+  }
+
+  .subHero {
+    font-size: 16px;
+  }
+
+  .subTitle {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero {
+    font-size: 45px;
+  }
+
+  .heroName {
+    font-size: 70px;
+  }
 }

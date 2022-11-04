@@ -10,17 +10,19 @@ interface Props {
 
 export const Project = ({ alignRight, title, description, skills }: Props) => {
   return (
-    <div className={`${styles.container} ${alignRight ? styles.alignRight : ''}`}>
-      <div className={styles.title}>{title}</div>
-      <div className={styles.description}>{description}</div>
+    <div className={`${styles.background} ${alignRight ? styles.alignRight : ''}`}>
+      <div className={`${styles.container} ${alignRight ? styles.alignRightContainer : ''}`}>
+        <div className={styles.title}>{title}</div>
+        <div className={styles.description}>{description}</div>
 
-      <ul className={styles.skillList}>
-        {skills.map((skill, i) => (
-          <li key={i} className={styles.skill}>
-            {skill}
-          </li>
-        ))}
-      </ul>
+        <ul className={styles.skillList}>
+          {skills.map((skill, i) => (
+            <li key={i} className={styles.skill}>
+              {skill}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
