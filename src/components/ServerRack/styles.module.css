@@ -1,0 +1,106 @@
+.rackContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 7rem;
+  padding: 1rem;
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  align-self: flex-end;
+}
+
+.titleText {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.entryText {
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.entryContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #686868;
+  padding: 0 0.5rem;
+  border-radius: 8px;
+}
+
+.darkEntry {
+  background-color: #4e4d4d;
+}
+
+.entryGroup {
+  display: flex;
+  align-items: center;
+}
+
+.greenLight {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  z-index: 2;
+  margin: 0 1rem;
+  background-color: #3b9e43;
+}
+
+.redLight {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  z-index: 2;
+  margin: 0 0.5rem;
+  background-color: #ff5c37;
+}
+
+.port {
+  height: 10px;
+  width: 60px;
+  border-radius: 8px;
+  z-index: 2;
+  margin: 0 1rem;
+  background-color: #a5a5a5;
+  justify-self: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .rackContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    font-size: 16px;
+    padding: 1.5rem;
+    margin-bottom: 15rem;
+  }
+
+  .titleText {
+    font-size: 16px;
+  }
+
+  .entryText {
+    font-size: 14px;
+  }
+
+  .greenLight {
+    margin: 0 0.5rem;
+  }
+
+  .redLight {
+    margin: 0 0.5rem;
+  }
+
+  .port {
+    height: 10px;
+    width: 60px;
+    margin: 0 0.5rem;
+  }
+}

@@ -1,0 +1,78 @@
+.background {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  margin-bottom: 12rem;
+  padding: 2rem 2rem 2rem 10%;
+  width: 45%;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  max-width: 700px;
+}
+
+.alignRightContainer {
+  align-self: flex-start;
+}
+
+.alignRight {
+  align-self: flex-end;
+  padding: 2rem 10% 2rem 2rem;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin-bottom: 0.5rem;
+  white-space: pre-wrap;
+}
+
+.skillRow {
+  display: flex;
+}
+.skillList {
+  columns: 2;
+  align-items: center;
+}
+
+.skill {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .background {
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 10rem;
+  }
+
+  .container {
+    max-width: 400px;
+    align-self: center;
+    flex: 1;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .skill {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,92 @@
+.container {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.heroContainer {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  font-size: 70px;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  line-height: 0.75;
+}
+
+.heroName {
+  font-size: 100px;
+  font-weight: 600;
+  margin-bottom: 8rem;
+  line-height: 0.75;
+}
+
+.subHero {
+  font-size: 20px;
+  font-weight: 500;
+  color: #f7b1e7;
+}
+
+.subTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #f7b1e7;
+  margin: 4rem auto 8rem auto;
+}
+
+.skillsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.skillTitle {
+  margin-top: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.skillText {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    font-size: 50px;
+  }
+
+  .heroName {
+    font-size: 80px;
+  }
+
+  .subHero {
+    font-size: 16px;
+  }
+
+  .subTitle {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero {
+    font-size: 45px;
+  }
+
+  .heroName {
+    font-size: 70px;
+  }
+}

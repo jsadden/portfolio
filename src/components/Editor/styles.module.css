@@ -1,0 +1,68 @@
+.editorContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #463564;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 7rem;
+  padding: 1rem;
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.line {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  padding: 0.25rem 0.5rem;
+}
+
+.lineNumber {
+  margin-right: 0.75rem;
+  font-weight: 600;
+  color: #ffffff73;
+}
+
+.title {
+  font-weight: 600;
+  color: #8bb2f6;
+}
+
+.entryText {
+  margin-left: 0.75rem;
+  font-weight: 600;
+  display: flex;
+}
+
+.classHighlight {
+  color: #fede5d;
+}
+
+.bracketHighlight {
+  font-weight: 600;
+  color: #ffffff87;
+}
+
+@media screen and (max-width: 768px) {
+  .editorContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    font-size: 16px;
+    padding: 1.5rem;
+    margin-bottom: 15rem;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .entryText {
+    font-size: 14px;
+  }
+
+  .lineNumber {
+    font-size: 14px;
+  }
+}
