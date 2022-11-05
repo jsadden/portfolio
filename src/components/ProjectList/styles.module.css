@@ -55,6 +55,7 @@
     box-sizing: border-box;
     align-items: center;
     padding: 2rem;
+    margin-top: 10rem;
   }
 
   .container {
