@@ -35,6 +35,7 @@ import autocadIcon from './assets/autocad.png';
 import inventorIcon from './assets/inventor.png';
 
 import alibitechIcon from './assets/alibitech.png';
+import swiftIcon from './assets/swift.png';
 import marketplaceAppIcon from './assets/marketplaceapp.png';
 import foodAppIcon from './assets/foodapp.png';
 import utcIcon from './assets/utc.png';
@@ -117,7 +118,7 @@ export const Scene = () => {
         }
         angle={{ x: 0.1, y: 0.15, z: 0.1 }}
         color={'#fff'}
-        imagePath={marketplaceAppIcon}
+        imagePath={swiftIcon}
       />
 
       <IconBox
@@ -125,7 +126,7 @@ export const Scene = () => {
         position={desktop ? { x: 30, y: -335, z: -35 } : tablet ? { x: 20, y: -345, z: -35 } : mobile ? { x: -7, y: -415, z: -35 } : { x: -7, y: -415, z: -35 }}
         angle={{ x: 0.1, y: 0.15, z: 0.1 }}
         color={'#fff'}
-        imagePath={foodAppIcon}
+        imagePath={marketplaceAppIcon}
       />
 
       <IconBox
@@ -133,12 +134,20 @@ export const Scene = () => {
         position={desktop ? { x: -30, y: -390, z: -35 } : tablet ? { x: -20, y: -405, z: -35 } : mobile ? { x: 8, y: -480, z: -35 } : { x: 8, y: -485, z: -35 }}
         angle={{ x: 0.1, y: 0.15, z: 0.1 }}
         color={'#fff'}
+        imagePath={foodAppIcon}
+      />
+
+      <IconBox
+        size={{ length: 12, width: 12, height: 12 }}
+        position={desktop ? { x: 30, y: -435, z: -35 } : tablet ? { x: 20, y: -460, z: -35 } : mobile ? { x: -6, y: -555, z: -35 } : { x: -6, y: -555, z: -35 }}
+        angle={{ x: 0.1, y: 0.15, z: 0.1 }}
+        color={'#fff'}
         imagePath={utcIcon}
       />
 
       <IconBox
         size={{ length: 12, width: 12, height: 12 }}
-        position={desktop ? { x: 30, y: -435, z: -35 } : tablet ? { x: 20, y: -460, z: -35 } : mobile ? { x: -6, y: -555, z: -35 } : { x: 20, y: -460, z: -35 }}
+        position={desktop ? { x: -30, y: -490, z: -35 } : tablet ? { x: -20, y: -500, z: -35 } : mobile ? { x: 7, y: -615, z: -35 } : { x: 7, y: -615, z: -35 }}
         angle={{ x: 0.1, y: 0.15, z: 0.1 }}
         color={'#fff'}
         imagePath={dccIcon}
