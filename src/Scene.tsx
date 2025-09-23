@@ -35,9 +35,8 @@ import autocadIcon from './assets/autocad.png';
 import inventorIcon from './assets/inventor.png';
 
 import alibitechIcon from './assets/alibitech.png';
+import lottabyteIcon from './assets/lottabyte.png';
 import swiftIcon from './assets/swift.png';
-import marketplaceAppIcon from './assets/marketplaceapp.png';
-import foodAppIcon from './assets/foodapp.png';
 import utcIcon from './assets/utc.png';
 import dccIcon from './assets/dcconsult.png';
 
@@ -104,7 +103,7 @@ export const Scene = () => {
       <IconBox
         size={{ length: 12, width: 12, height: 12 }}
         position={
-          desktop ? { x: 25, y: -235, z: -35 } : tablet ? { x: 20, y: -240, z: -35 } : mobile ? { x: -7, y: -285, z: -35 } : { x: -10, y: -285, z: -35 }
+          desktop ? { x: 25, y: -250, z: -35 } : tablet ? { x: 20, y: -250, z: -35 } : mobile ? { x: -7, y: -300, z: -35 } : { x: -10, y: -285, z: -35 }
         }
         angle={{ x: 0.1, y: 0.15, z: 0.1 }}
         color={'#fff'}
@@ -114,8 +113,16 @@ export const Scene = () => {
       <IconBox
         size={{ length: 12, width: 12, height: 12 }}
         position={
-          desktop ? { x: -30, y: -290, z: -35 } : tablet ? { x: -20, y: -295, z: -35 } : mobile ? { x: 7, y: -355, z: -35 } : { x: 10, y: -355, z: -35 }
+          desktop ? { x: -30, y: -300, z: -35 } : tablet ? { x: -20, y: -300, z: -35 } : mobile ? { x: 7, y: -370, z: -35 } : { x: 10, y: -355, z: -35 }
         }
+        angle={{ x: 0.1, y: 0.15, z: 0.1 }}
+        color={'#fff'}
+        imagePath={lottabyteIcon}
+      />
+
+      <IconBox
+        size={{ length: 12, width: 12, height: 12 }}
+        position={desktop ? { x: 30, y: -355, z: -35 } : tablet ? { x: 20, y: -360, z: -35 } : mobile ? { x: -7, y: -440, z: -35 } : { x: -7, y: -415, z: -35 }}
         angle={{ x: 0.1, y: 0.15, z: 0.1 }}
         color={'#fff'}
         imagePath={swiftIcon}
@@ -123,34 +130,18 @@ export const Scene = () => {
 
       <IconBox
         size={{ length: 12, width: 12, height: 12 }}
-        position={desktop ? { x: 30, y: -335, z: -35 } : tablet ? { x: 20, y: -345, z: -35 } : mobile ? { x: -7, y: -415, z: -35 } : { x: -7, y: -415, z: -35 }}
-        angle={{ x: 0.1, y: 0.15, z: 0.1 }}
-        color={'#fff'}
-        imagePath={marketplaceAppIcon}
-      />
-
-      <IconBox
-        size={{ length: 12, width: 12, height: 12 }}
-        position={desktop ? { x: -30, y: -390, z: -35 } : tablet ? { x: -20, y: -405, z: -35 } : mobile ? { x: 8, y: -480, z: -35 } : { x: 8, y: -485, z: -35 }}
-        angle={{ x: 0.1, y: 0.15, z: 0.1 }}
-        color={'#fff'}
-        imagePath={foodAppIcon}
-      />
-
-      <IconBox
-        size={{ length: 12, width: 12, height: 12 }}
-        position={desktop ? { x: 30, y: -435, z: -35 } : tablet ? { x: 20, y: -460, z: -35 } : mobile ? { x: -6, y: -555, z: -35 } : { x: -6, y: -555, z: -35 }}
-        angle={{ x: 0.1, y: 0.15, z: 0.1 }}
-        color={'#fff'}
-        imagePath={utcIcon}
-      />
-
-      <IconBox
-        size={{ length: 12, width: 12, height: 12 }}
-        position={desktop ? { x: -30, y: -490, z: -35 } : tablet ? { x: -20, y: -500, z: -35 } : mobile ? { x: 7, y: -615, z: -35 } : { x: 7, y: -615, z: -35 }}
+        position={desktop ? { x: -30, y: -400, z: -35 } : tablet ? { x: -20, y: -410, z: -35 } : mobile ? { x: 7, y: -505, z: -35 } : { x: 7, y: -615, z: -35 }}
         angle={{ x: 0.1, y: 0.15, z: 0.1 }}
         color={'#fff'}
         imagePath={dccIcon}
+      />
+
+      <IconBox
+        size={{ length: 12, width: 12, height: 12 }}
+        position={desktop ? { x: 30, y: -450, z: -35 } : tablet ? { x: 20, y: -460, z: -35 } : mobile ? { x: -6, y: -570, z: -35 } : { x: -6, y: -555, z: -35 }}
+        angle={{ x: 0.1, y: 0.15, z: 0.1 }}
+        color={'#fff'}
+        imagePath={utcIcon}
       />
     </>
   );
