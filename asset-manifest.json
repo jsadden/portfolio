@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f4169232.css",
-    "main.js": "/portfolio/static/js/main.8128cf3e.js",
+    "main.css": "/portfolio/static/css/main.944c8c96.css",
+    "main.js": "/portfolio/static/js/main.71eac685.js",
     "static/media/dcconsult.png": "/portfolio/static/media/dcconsult.e7e601ebd58da4efab5c.png",
     "static/media/utc.png": "/portfolio/static/media/utc.f1d276840ca02afb0152.png",
     "static/media/swift.png": "/portfolio/static/media/swift.e6cb45636acfb9ee31b1.png",
     "static/media/inventor.png": "/portfolio/static/media/inventor.c2d0cfbdca3d3b2dd6a3.png",
     "static/media/gql.png": "/portfolio/static/media/gql.52803da7e3ce0f282633.png",
     "static/media/alibitech.png": "/portfolio/static/media/alibitech.4048355ed7c2e8ab0cd6.png",
-    "static/media/marketplaceapp.png": "/portfolio/static/media/marketplaceapp.3a552841887780ee7f75.png",
     "static/media/psql.png": "/portfolio/static/media/psql.a2a7eb58da188297c33c.png",
     "static/media/matlab.png": "/portfolio/static/media/matlab.dda899c7c1a82a5b543a.png",
-    "static/media/foodapp.png": "/portfolio/static/media/foodapp.5ec06f21f4f7bfd2826a.png",
     "static/media/node.png": "/portfolio/static/media/node.720b794d794219441a2e.png",
     "static/media/bash.png": "/portfolio/static/media/bash.d7d114d891eef7718a79.png",
     "static/media/redux.png": "/portfolio/static/media/redux.b391a6a12a95df400ef3.png",
     "static/media/fusionauth.png": "/portfolio/static/media/fusionauth.7bc036b42d1afd9861c3.png",
     "static/media/react.png": "/portfolio/static/media/react.ecf66422879366590717.png",
+    "static/media/lottabyte.png": "/portfolio/static/media/lottabyte.e331b0ff8478c8ef9695.png",
     "static/media/mongo.png": "/portfolio/static/media/mongo.33851c2523f8d8b95737.png",
     "static/media/gitlab.png": "/portfolio/static/media/gitlab.515bef6f7faa7a3c3994.png",
     "static/media/terraform.png": "/portfolio/static/media/terraform.cd396be9b68c3845d9f8.png",
@@ -25,11 +24,11 @@
     "static/media/css.png": "/portfolio/static/media/css.984379b1f87ba5c87cb1.png",
     "static/media/html.png": "/portfolio/static/media/html.769350b68bb9898a0e23.png",
     "index.html": "/portfolio/index.html",
-    "main.f4169232.css.map": "/portfolio/static/css/main.f4169232.css.map",
-    "main.8128cf3e.js.map": "/portfolio/static/js/main.8128cf3e.js.map"
+    "main.944c8c96.css.map": "/portfolio/static/css/main.944c8c96.css.map",
+    "main.71eac685.js.map": "/portfolio/static/js/main.71eac685.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4169232.css",
-    "static/js/main.8128cf3e.js"
+    "static/css/main.944c8c96.css",
+    "static/js/main.71eac685.js"
   ]
 }
